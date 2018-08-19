@@ -29,11 +29,15 @@ class ResultViewController: UIViewController {
         super.viewWillAppear(animated)
         self.resultLabel.text = messageForMatch(match)
         self.resultImage.image = imageForMatch(match)
+        self.resultImage.alpha = 0
         
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        UIView.animate(withDuration: 0.9) {
+            self.resultImage.alpha = 1
+        }
     }
     
     // MARK: messageForMatch()
