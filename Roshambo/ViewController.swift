@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     // MARK: Properties
     
     var match: RockPaperScissorsMatch!
-    var history  = [ [String:String] ]()
+    var history  =  [RockPaperScissorsMatch]()
     
     // MARk: outlets
     @IBOutlet weak var rockButton: UIButton!
@@ -31,12 +31,23 @@ class ViewController: UIViewController {
         }
     }
     
+    // connect ViewController with HistoryController with only code
+    @IBAction func showHistory(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let nextViewController = storyboard.instantiateViewController(withIdentifier: "HistoryController") as! HistoryController
+        nextViewController.history = self.history
+        self.present(nextViewController, animated: true, completion: nil)
+    }
+    
     func throwDown(_ playersMove: RockPaperScissors) {
         // here the RockPaperScissors generates the opponent move
         let computersMove = RockPaperScissors()
-        
+    
         // the RockPaperScissocrMatch stores the result of a match
         self.match = RockPaperScissorsMatch(p1: playersMove, p2: computersMove)
+        
+        // Add match to the history
+        self.history.append(match)
     }
 
    

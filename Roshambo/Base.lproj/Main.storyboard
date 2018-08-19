@@ -84,7 +84,7 @@
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                 <state key="normal" title="History"/>
                                 <connections>
-                                    <segue destination="ony-ee-7fH" kind="presentation" identifier="HistoryController" id="uP8-YP-MgA"/>
+                                    <action selector="showHistory:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RZq-wr-CUm"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -118,7 +118,7 @@
         <!--History Controller-->
         <scene sceneID="JA6-Mt-YQ6">
             <objects>
-                <viewController id="ony-ee-7fH" customClass="HistoryController" customModule="Roshambo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HistoryController" id="ony-ee-7fH" customClass="HistoryController" customModule="Roshambo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="53H-dh-QmG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -184,6 +184,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Cch-ek-N5x"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="yFj-hH-t5M" id="gxa-gr-FNF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oFw-il-KCe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
