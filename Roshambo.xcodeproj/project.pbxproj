@@ -12,6 +12,10 @@
 		0D39727B2105E2EB0028FBDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D3972792105E2EB0028FBDD /* Main.storyboard */; };
 		0D39727D2105E2EC0028FBDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D39727C2105E2EC0028FBDD /* Assets.xcassets */; };
 		0D3972802105E2EC0028FBDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D39727E2105E2EC0028FBDD /* LaunchScreen.storyboard */; };
+		0D3972882106B7CF0028FBDD /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3972872106B7CF0028FBDD /* ResultViewController.swift */; };
+		0D62A9312129063B00178FAA /* RockPaperScissorsMatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D62A9302129063B00178FAA /* RockPaperScissorsMatch.swift */; };
+		0D62A9332129065900178FAA /* RockPaperScissors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D62A9322129065800178FAA /* RockPaperScissors.swift */; };
+		0DF216D5210ED66D005C0341 /* HistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF216D4210ED66D005C0341 /* HistoryController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		0D39727C2105E2EC0028FBDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D39727F2105E2EC0028FBDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0D3972812105E2EC0028FBDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D3972872106B7CF0028FBDD /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		0D62A9302129063B00178FAA /* RockPaperScissorsMatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockPaperScissorsMatch.swift; sourceTree = "<group>"; };
+		0D62A9322129065800178FAA /* RockPaperScissors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockPaperScissors.swift; sourceTree = "<group>"; };
+		0DF216D4210ED66D005C0341 /* HistoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,26 @@
 		0D3972742105E2EB0028FBDD /* Roshambo */ = {
 			isa = PBXGroup;
 			children = (
-				0D3972752105E2EB0028FBDD /* AppDelegate.swift */,
 				0D3972772105E2EB0028FBDD /* ViewController.swift */,
+				0D3972872106B7CF0028FBDD /* ResultViewController.swift */,
+				0D62A9302129063B00178FAA /* RockPaperScissorsMatch.swift */,
+				0D62A9322129065800178FAA /* RockPaperScissors.swift */,
+				0DF216D4210ED66D005C0341 /* HistoryController.swift */,
 				0D3972792105E2EB0028FBDD /* Main.storyboard */,
-				0D39727C2105E2EC0028FBDD /* Assets.xcassets */,
-				0D39727E2105E2EC0028FBDD /* LaunchScreen.storyboard */,
 				0D3972812105E2EC0028FBDD /* Info.plist */,
+				0D62A92F2129060900178FAA /* Supporting Files */,
 			);
 			path = Roshambo;
+			sourceTree = "<group>";
+		};
+		0D62A92F2129060900178FAA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0D3972752105E2EB0028FBDD /* AppDelegate.swift */,
+				0D39727C2105E2EC0028FBDD /* Assets.xcassets */,
+				0D39727E2105E2EC0028FBDD /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +155,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DF216D5210ED66D005C0341 /* HistoryController.swift in Sources */,
 				0D3972782105E2EB0028FBDD /* ViewController.swift in Sources */,
 				0D3972762105E2EB0028FBDD /* AppDelegate.swift in Sources */,
+				0D62A9312129063B00178FAA /* RockPaperScissorsMatch.swift in Sources */,
+				0D62A9332129065900178FAA /* RockPaperScissors.swift in Sources */,
+				0D3972882106B7CF0028FBDD /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
